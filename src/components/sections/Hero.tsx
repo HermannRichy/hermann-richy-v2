@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 // Image Example Interactive Reveal Effect
 export default function Hero() {
-    const revealImgRef = useRef(null);
+    const revealImgRef = useRef<HTMLImageElement | null>(null);
 
     return (
         <section
