@@ -32,7 +32,7 @@ export default function Hero() {
                 }
             }}
         >
-            <LaserFlow laserColor="#b0fc51" fogScale={0.53} />
+            <LaserFlow fogScale={0.53} />
 
             <div
                 style={{
