@@ -1,10 +1,19 @@
 "use client";
 
 import LaserFlow from "@/components/LaserFlow";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import type { CSSProperties } from "react";
 
 // Image Example Interactive Reveal Effect
 export default function Hero() {
+    useEffect(() => {
+        const el = revealImgRef.current;
+        if (!el) return;
+
+        el.style.setProperty("--mx", "-9999px");
+        el.style.setProperty("--my", "-9999px");
+    }, []);
+
     const revealImgRef = useRef<HTMLImageElement | null>(null);
 
     return (
@@ -68,8 +77,6 @@ export default function Hero() {
                     mixBlendMode: "lighten",
                     opacity: 0.3,
                     pointerEvents: "none",
-                    "--mx": "-9999px",
-                    "--my": "-9999px",
                     WebkitMaskImage:
                         "radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,1) 0px, rgba(255,255,255,0.95) 60px, rgba(255,255,255,0.6) 120px, rgba(255,255,255,0.25) 180px, rgba(255,255,255,0) 240px)",
                     maskImage:
