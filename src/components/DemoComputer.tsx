@@ -66,7 +66,7 @@ export const DemoComputer = ({
     }, [txt]);
 
     return (
-        <group ref={group} {...props} dispose={null}>
+        <group ref={group} dispose={null} {...(props as any)}>
             <group name="Scene">
                 <mesh
                     name="monitor-screen"

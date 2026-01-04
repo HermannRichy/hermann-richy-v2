@@ -273,7 +273,7 @@ export default function BubbleMenu({
                         className={[
                             "logo-content",
                             "inline-flex items-center justify-center",
-                            "w-[120px] h-full",
+                            "w-30 h-full",
                         ].join(" ")}
                         style={
                             {
@@ -348,7 +348,7 @@ export default function BubbleMenu({
                         "inset-0",
                         "flex items-center justify-center",
                         "pointer-events-none",
-                        "z-[1000]",
+                        "z-1000",
                     ].join(" ")}
                     aria-hidden={!isMenuOpen}
                 >
@@ -356,7 +356,7 @@ export default function BubbleMenu({
                         className={[
                             "pill-list",
                             "list-none m-0 px-6",
-                            "w-full max-w-[1600px] mx-auto",
+                            "w-full max-w-400 mx-auto",
                             "flex flex-wrap",
                             "gap-x-0 gap-y-1",
                             "pointer-events-auto",
@@ -371,7 +371,7 @@ export default function BubbleMenu({
                                 className={[
                                     "pill-col",
                                     "flex justify-center items-stretch",
-                                    "[flex:0_0_calc(100%/3)]",
+                                    "flex-[0_0_calc(100%/3)]",
                                     "box-border",
                                 ].join(" ")}
                             >

@@ -84,7 +84,7 @@ export const Developer = ({
     }, [animationName, actions]);
 
     return (
-        <group {...props} ref={groupRef} dispose={null}>
+        <group {...(props as any)} ref={groupRef} dispose={null}>
             <primitive object={nodes.Hips} />
             <skinnedMesh
                 name="EyeLeft"

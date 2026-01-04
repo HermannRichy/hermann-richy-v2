@@ -4,6 +4,7 @@ import { PerspectiveCamera } from "@react-three/drei";
 import { Canvas, type Vector3 } from "@react-three/fiber";
 import { Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { CanvasLoader } from "@/components/CanvasLoader";
@@ -25,11 +26,14 @@ export default function HeroTwo() {
     return (
         <section className="relative flex min-h-screen w-full flex-col">
             <div className="c-space mx-auto mt-20 flex w-full flex-col gap-3 sm:mt-36">
-                <p className="text-center font-generalsans text-xl font-medium text-white sm:text-3xl">
-                    Hi, I am Shubham <span className="waving-hand">👋</span>
+                <p className="text-center text-primary font-ciguatera text-xl font-medium sm:text-3xl">
+                    Hi, je suis Hermann Richy{" "}
+                    <span className="waving-hand">👋</span>
                 </p>
 
-                <p className="text-center">Building Products &amp; Brands</p>
+                <p className="text-center">
+                    Ingénieur logiciel &amp; formateur
+                </p>
             </div>
 
             <div className="absolute inset-0 size-full">
@@ -73,8 +77,13 @@ export default function HeroTwo() {
                 </Canvas>
             </div>
 
-            <div className="c-space absolute bottom-7 left-0 right-0 z-10 w-full">
-                <Button>Let&apos;s work together</Button>
+            <div className="text-center mt-auto">
+                <Button
+                    asChild
+                    className="text-sm py-6 px-8 rounded-full hover:cursor-pointer"
+                >
+                    <Link href="#contact">Let's work together</Link>
+                </Button>
             </div>
         </section>
     );

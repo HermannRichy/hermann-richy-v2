@@ -42,7 +42,7 @@ export default function Header() {
     return (
         <BubbleMenu
             logo={
-                <span className="text-lg text-background font-bold font-ciguatera">
+                <span className="text-lg text-background font-bold font-ciguatera py-2">
                     Hermann Richy
                 </span>
             }
