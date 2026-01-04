@@ -2,43 +2,16 @@
 
 import LaserFlow from "@/components/LaserFlow";
 import { useRef, useEffect } from "react";
-import type { CSSProperties } from "react";
+import HeroTwo from "./HeroTwo";
 
 // Image Example Interactive Reveal Effect
 export default function Hero() {
-    useEffect(() => {
-        const el = revealImgRef.current;
-        if (!el) return;
-
-        el.style.setProperty("--mx", "-9999px");
-        el.style.setProperty("--my", "-9999px");
-    }, []);
-
-    const revealImgRef = useRef<HTMLImageElement | null>(null);
-
     return (
         <section
             style={{
-                height: "800px",
+                height: "100vh",
                 position: "relative",
-                overflow: "hidden",
-            }}
-            onMouseMove={(e) => {
-                const rect = e.currentTarget.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const el = revealImgRef.current;
-                if (el) {
-                    el.style.setProperty("--mx", `${x}px`);
-                    el.style.setProperty("--my", `${y + rect.height * 0.5}px`);
-                }
-            }}
-            onMouseLeave={() => {
-                const el = revealImgRef.current;
-                if (el) {
-                    el.style.setProperty("--mx", "-9999px");
-                    el.style.setProperty("--my", "-9999px");
-                }
+                overflowX: "hidden",
             }}
         >
             <LaserFlow fogScale={0.53} />
@@ -62,29 +35,8 @@ export default function Hero() {
                     zIndex: 6,
                 }}
             >
-                {/* Your content here */}
+                <HeroTwo />
             </div>
-
-            <img
-                ref={revealImgRef}
-                src="/path/to/image.jpg"
-                alt="Reveal effect"
-                style={{
-                    position: "absolute",
-                    width: "100%",
-                    top: "-50%",
-                    zIndex: 5,
-                    mixBlendMode: "lighten",
-                    opacity: 0.3,
-                    pointerEvents: "none",
-                    WebkitMaskImage:
-                        "radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,1) 0px, rgba(255,255,255,0.95) 60px, rgba(255,255,255,0.6) 120px, rgba(255,255,255,0.25) 180px, rgba(255,255,255,0) 240px)",
-                    maskImage:
-                        "radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,1) 0px, rgba(255,255,255,0.95) 60px, rgba(255,255,255,0.6) 120px, rgba(255,255,255,0.25) 180px, rgba(255,255,255,0) 240px)",
-                    WebkitMaskRepeat: "no-repeat",
-                    maskRepeat: "no-repeat",
-                }}
-            />
         </section>
     );
 }

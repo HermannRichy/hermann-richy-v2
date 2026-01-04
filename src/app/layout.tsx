@@ -16,7 +16,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-    title: "Richy Sama",
+    title: "Hermann Richy",
     description: "Software engineer & trainer",
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="fr" suppressHydrationWarning>
             <body
                 className={`${outfit.variable} ${ciguatera.variable} antialiased font-outfit`}
             >

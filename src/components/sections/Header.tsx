@@ -31,7 +31,7 @@ export default function Header() {
             hoverStyles: { bgColor: "#f59e0b", textColor: "#ffffff" },
         },
         {
-            label: "contact",
+            label: "Contact",
             href: "#",
             ariaLabel: "Contact",
             rotation: -8,
