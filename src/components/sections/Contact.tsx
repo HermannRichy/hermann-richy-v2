@@ -116,12 +116,12 @@ export default function Contact() {
 
     return (
         <section className="my-20" id="contact">
-            <div className="p-4 md:p-10">
+            <div className="p-4 md:p-10 md:w-3/5 md:mx-auto">
                 <h3 className="font-ciguatera text-4xl text-primary">
                     Contactez-moi !
                 </h3>
 
-                <p className="mt-3 text-lg text-white-600 md:w-2/5">
+                <p className="mt-3 text-lg text-white-600">
                     Vous avez un projet en tête ou souhaitez simplement dire
                     bonjour? N&apos;hésitez pas à me contacter en remplissant le
                     formulaire ci-dessous.
@@ -130,7 +130,7 @@ export default function Contact() {
                 <form
                     ref={formRef}
                     onSubmit={(e) => void handleSubmit(e)}
-                    className="mt-12 flex flex-col space-y-7 md:w-2/5"
+                    className="mt-12 flex flex-col space-y-7"
                 >
                     <label className="flex flex-col space-y-3">
                         <span className="field-label">Nom complet</span>
