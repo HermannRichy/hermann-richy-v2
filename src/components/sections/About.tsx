@@ -29,7 +29,7 @@ export default function About() {
         <section className="my-20" id="about">
             <div className="grid h-full p-4 grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-6">
                 <div className="col-span-1 lg:row-span-3">
-                    <div className="bg-black p-4 md:py-4 md:px-6 rounded-3xl md:h-full">
+                    <div className="bg-black p-4 md:py-4 md:px-6 rounded-3xl h-fit md:h-full">
                         <img
                             src="/assets/grid1.png"
                             alt="Grid 1"
@@ -51,7 +51,7 @@ export default function About() {
                 </div>
 
                 <div className="col-span-1 lg:row-span-3">
-                    <div className="bg-black py-4 px-6 rounded-3xl md:h-full">
+                    <div className="bg-black py-4 px-6 rounded-3xl h-fit md:h-full">
                         <img
                             src="/assets/grid2.png"
                             alt="Grid 2"
@@ -72,7 +72,7 @@ export default function About() {
                 </div>
 
                 <div className="col-span-1 lg:row-span-4">
-                    <div className="bg-black py-4 px-6 rounded-3xl md:h-full">
+                    <div className="bg-black py-4 px-6 rounded-3xl h-fit md:h-full">
                         <div className="flex h-fit w-full items-center justify-center rounded-3xl sm:h-81.5">
                             <Globe
                                 height={326}
@@ -111,7 +111,7 @@ export default function About() {
                 </div>
 
                 <div className="lg:col-span-2 lg:row-span-3">
-                    <div className="bg-black py-4 px-6 rounded-3xl md:h-full">
+                    <div className="bg-black py-4 px-6 rounded-3xl h-fit md:h-full">
                         <img
                             src="/assets/grid3.png"
                             alt="Grid 3"
@@ -132,7 +132,7 @@ export default function About() {
                 </div>
 
                 <div className="lg:col-span-1 lg:row-span-2">
-                    <div className="bg-black py-4 px-6 rounded-3xl md:h-full">
+                    <div className="bg-black py-4 px-6 rounded-3xl h-fit md:h-full">
                         <img
                             src="/assets/grid4.png"
                             alt="Grid 4"
