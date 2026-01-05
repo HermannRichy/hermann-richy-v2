@@ -17,13 +17,6 @@ export default function Header() {
             hoverStyles: { bgColor: "#10b981", textColor: "#ffffff" },
         },
         {
-            label: "Skills",
-            href: "#skills",
-            ariaLabel: "Skills",
-            rotation: 8,
-            hoverStyles: { bgColor: "#ef4444", textColor: "#ffffff" },
-        },
-        {
             label: "Projets",
             href: "#projects",
             ariaLabel: "Projects",

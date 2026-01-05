@@ -29,41 +29,41 @@ export const navLinks = [
 export const clientReviews = [
     {
         id: 1,
-        name: "Emily Johnson",
-        position: "Marketing Director at GreenLeaf",
+        name: "M. Yoan Melson Dansou",
+        position: "CEO of FuturCraft Institute",
         img: "/assets/review1.png",
-        review: "Working with Shubham was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
         id: 2,
-        name: "Mark Rogers",
-        position: "Founder of TechGear Shop",
+        name: "Enock DEKENOU",
+        position: "DG du Cabinet Well Steven",
         img: "/assets/review2.png",
-        review: "Shubham's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional! Fantastic work.",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
         id: 3,
-        name: "John Dohsas",
-        position: "Project Manager at UrbanTech ",
+        name: "Igor Adande",
+        position: "Analyste programmeur",
         img: "/assets/review3.png",
-        review: "I can't say enough good things about Shubham. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
         id: 4,
-        name: "Ether Smith",
-        position: "CEO of BrightStar Enterprises",
+        name: "Serge HOUNDODE",
+        position: "DG Cefora Formation",
         img: "/assets/review4.png",
-        review: "Shubham was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
 ] as const;
 
 export const myProjects = [
     {
-        title: "Podcastr - AI Podcast Platform",
-        desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+        title: "Benin Events – Plateforme de gestion d’événements",
+        desc: "Benin Events est une plateforme digitale moderne dédiée à la promotion, la découverte et la gestion des événements au Bénin. Elle permet aux organisateurs de publier leurs événements et aux utilisateurs de trouver facilement concerts, conférences, festivals culturels et rencontres professionnelles en un seul endroit.",
         subdesc:
-            "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-        href: "https://www.example.com",
+            "Conçue comme une plateforme évolutive orientée événements avec Next.js 14, Tailwind CSS, TypeScript, Framer Motion et Convex, Benin Events offre une expérience rapide, intuitive et immersive aussi bien pour les organisateurs que pour les participants.",
+        href: "https://benin-events-project.vercel.app/",
         texture: "/textures/project/project1.mp4",
         logo: "/assets/project-logo1.png",
         logoStyle: {
@@ -96,11 +96,11 @@ export const myProjects = [
         ],
     },
     {
-        title: "LiveDoc - Real-Time Google Docs Clone",
-        desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+        title: "Well Steven – Site vitrine pour cabinet d’avocat",
+        desc: "Well Steven est un site vitrine professionnel conçu pour un cabinet d’avocat, mettant en avant son expertise, ses domaines d’intervention et son image de marque. Le site offre une présentation claire, crédible et moderne afin d’instaurer la confiance avec les clients et partenaires.",
         subdesc:
-            "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-        href: "https://www.example.com",
+            "Développé en 2025 avec Next.js, ce projet met l’accent sur la performance, le référencement et une expérience utilisateur soignée, tout en respectant les standards du web moderne et les exigences de communication d’un cabinet juridique.",
+        href: "https://wellsteven.com",
         texture: "/textures/project/project2.mp4",
         logo: "/assets/project-logo2.png",
         logoStyle: {
@@ -133,50 +133,11 @@ export const myProjects = [
         ],
     },
     {
-        title: "CarePulse - Health Management System",
-        desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+        title: "Station App Maintener – Gestion des interventions techniques",
+        desc: "Station App Maintener est une application web PWA dédiée à la gestion et au suivi des interventions des techniciens sur les mini-stations au Bénin. Elle permet de planifier, tracer et documenter les opérations de maintenance en temps réel, tout en améliorant la réactivité et l’efficacité des équipes terrain.",
         subdesc:
-            "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-        href: "https://www.example.com",
-        texture: "/textures/project/project3.mp4",
-        logo: "/assets/project-logo3.png",
-        logoStyle: {
-            backgroundColor: "#60f5a1",
-            background:
-                "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
-            border: "0.2px solid rgba(208, 213, 221, 1)",
-            boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
-        },
-        spotlight: "/assets/spotlight3.png",
-        tags: [
-            {
-                id: 1,
-                name: "React.js",
-                path: "/assets/react.svg",
-            },
-            {
-                id: 2,
-                name: "TailwindCSS",
-                path: "/assets/tailwindcss.png",
-            },
-            {
-                id: 3,
-                name: "TypeScript",
-                path: "/assets/typescript.png",
-            },
-            {
-                id: 4,
-                name: "Framer Motion",
-                path: "/assets/framer.png",
-            },
-        ],
-    },
-    {
-        title: "Horizon - Online Banking Platform",
-        desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
-        subdesc:
-            "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-        href: "https://www.example.com",
+            "Conçue comme une application web progressive avec un tableau de bord administrateur complet, Station App Maintener offre une vision centralisée des interventions, des techniciens et des performances opérationnelles, avec un fort accent sur la mobilité, la fiabilité et la performance.",
+        href: "https://station-app-maintener.vercel.app",
         texture: "/textures/project/project4.mp4",
         logo: "/assets/project-logo4.png",
         logoStyle: {
@@ -208,12 +169,13 @@ export const myProjects = [
             },
         ],
     },
+
     {
-        title: "Imaginify - AI Photo Manipulation App",
-        desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
+        title: "TIBUCE-AFRICA – Tournoi international de Business Game",
+        desc: "TIBUCE-AFRICA est un tournoi international de business game visant à révéler et valoriser les talents entrepreneuriaux à travers des compétitions stratégiques. Le site vitrine du projet permet de présenter le concept, les objectifs et les différentes éditions du tournoi, tout en facilitant les inscriptions en ligne des participants.",
         subdesc:
-            "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-        href: "https://www.example.com",
+            "Le projet inclut également un tableau de bord administrateur sécurisé avec système d’authentification, permettant de visualiser, gérer et suivre efficacement les inscriptions effectuées sur le site, offrant ainsi une gestion centralisée et professionnelle de l’événement.",
+        href: "https://tibuceafrica.com",
         texture: "/textures/project/project5.mp4",
         logo: "/assets/project-logo5.png",
         logoStyle: {
@@ -250,29 +212,29 @@ export const myProjects = [
 export const workExperiences = [
     {
         id: 1,
-        name: "Framer",
-        pos: "Lead Web Developer",
-        duration: "2022 - Present",
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: "/assets/framer.svg",
+        name: "Digital Innovation",
+        pos: "Lead Web Developer & CEO",
+        duration: "2022 - Présent",
+        title: "Fondateur et Lead Developer de Digital Innovation, une agence web et digitale. J’ai piloté et développé la majorité des projets de l’agence, allant des sites vitrines aux applications web complexes, en assurant la direction technique, la gestion de projets et la relation client.",
+        icon: "/assets/di-logo.svg",
         animation: "victory",
     },
     {
         id: 2,
-        name: "Figma",
-        pos: "Web Developer",
-        duration: "2020 - 2022",
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: "/assets/figma.svg",
+        name: "Cefora Formation & FuturCraft Institut",
+        pos: "Formateur Web & Développement",
+        duration: "2022 - Présent",
+        title: "Formateur en développement web et technologies modernes. J’accompagne les apprenants dans la maîtrise des bases et des concepts avancés du web, en combinant théorie, pratique et projets réels pour une montée en compétences efficace.",
+        icon: "/assets/di-logo.svg",
         animation: "clapping",
     },
     {
         id: 3,
-        name: "Notion",
-        pos: "Junior Web Developer",
-        duration: "2019 - 2020",
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-        icon: "/assets/notion.svg",
+        name: "Cashless",
+        pos: "Web Developer – Mission",
+        duration: "Novembre 2024 - Présent",
+        title: "Mission de développement d’applications web pour la gestion des mini-stations. J’ai conçu et développé Station App Maintener et Station App Dashboard, incluant la gestion des interventions techniques, les tableaux de bord administrateurs et les fonctionnalités PWA.",
+        icon: "/assets/di-logo.svg",
         animation: "salute",
     },
 ] as const;
@@ -281,16 +243,16 @@ export const socialLinks = [
     {
         name: "GitHub",
         icon: "/assets/github.svg",
-        url: "https://github.com",
+        url: "https://github.com/HermannRichy",
+    },
+    {
+        name: "Facebook",
+        icon: "/assets/facebook.svg",
+        url: "https://facebook.com/hermann.hnv",
     },
     {
         name: "Twitter",
         icon: "/assets/twitter.svg",
         url: "https://twitter.com",
-    },
-    {
-        name: "Instagram",
-        icon: "/assets/instagram.svg",
-        url: "https://instagram.com",
     },
 ] as const;
