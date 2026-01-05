@@ -116,7 +116,7 @@ export default function Contact() {
 
     return (
         <section className="my-20" id="contact">
-            <div className="">
+            <div className="p-4 md:p-10">
                 <h3 className="font-ciguatera text-2xl md:text-4xl">
                     Let&apos;s talk
                 </h3>

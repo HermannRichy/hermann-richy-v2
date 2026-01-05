@@ -14,9 +14,9 @@ export default function Experience() {
     >("idle");
 
     return (
-        <section className="c-space my-20" id="work">
+        <section className="p-4 my-20" id="work">
             <div className="w-full text-white-600">
-                <h3 className="font-ciguatera text-2xl md:text-4xl">
+                <h3 className="font-ciguatera text-3xl md:text-4xl">
                     Mon expérience professionnelle
                 </h3>
 
@@ -86,7 +86,7 @@ export default function Experience() {
                                             <div className="border-l h-full border-white/20" />
                                         </div>
 
-                                        <div className="px-2.5 py-5 sm:p-5">
+                                        <div className="w-10/12 px-2.5 py-5 sm:p-5">
                                             <p className="font-bold text-white-800">
                                                 {name}
                                             </p>

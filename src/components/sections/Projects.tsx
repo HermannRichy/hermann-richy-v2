@@ -36,7 +36,9 @@ export default function Projects() {
 
     return (
         <section className="bg-black p-4 md:p-10 rounded-4xl my-20">
-            <p className="font-ciguatera text-2xl md:text-4xl">Mon travail</p>
+            <p className="font-ciguatera text-3xl md:text-4xl m-5">
+                Mon travail
+            </p>
 
             <div className="mt-12 grid w-full grid-cols-1 gap-5 lg:grid-cols-2">
                 <div className="relative flex flex-col gap-5 px-5 py-10 shadow-2xl shadow-black-200 sm:p-10">
