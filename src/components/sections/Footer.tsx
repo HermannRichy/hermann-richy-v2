@@ -2,7 +2,7 @@ import { socialLinks } from "@/constants";
 
 export default function Footer() {
     return (
-        <footer className="c-space flex flex-wrap items-center justify-between gap-5 border-t border-black-300 pb-3 pt-7">
+        <footer className="p-4 flex flex-wrap items-center justify-between gap-5 border-t border-black-300 pb-3 pt-7">
             <div className="text-white-500">
                 &copy; {new Date().getFullYear()} <strong>Hermann Richy</strong>
                 . Tous droits reservés.
