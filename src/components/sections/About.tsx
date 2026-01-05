@@ -27,8 +27,8 @@ export default function About() {
 
     return (
         <section className="my-20" id="about">
-            <div className="grid h-full p-4 grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-6">
-                <div className="col-span-1 xl:row-span-3">
+            <div className="grid h-full p-4 grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-6">
+                <div className="col-span-1 lg:row-span-3">
                     <div className="bg-black p-4 md:py-4 md:px-6 rounded-3xl md:h-full">
                         <img
                             src="/assets/grid1.png"
@@ -36,7 +36,7 @@ export default function About() {
                             className="h-fit w-full object-contain sm:h-69"
                         />
 
-                        <div>
+                        <div className="space-y-2">
                             <p className="text-2xl font-bold font-ciguatera">
                                 Hello, moi c'est Richy!
                             </p>
@@ -50,7 +50,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="col-span-1 xl:row-span-3">
+                <div className="col-span-1 lg:row-span-3">
                     <div className="bg-black py-4 px-6 rounded-3xl md:h-full">
                         <img
                             src="/assets/grid2.png"
@@ -58,7 +58,7 @@ export default function About() {
                             className="h-fit w-full object-contain sm:w-69"
                         />
 
-                        <div>
+                        <div className="space-y-2">
                             <p className="text-2xl font-bold font-ciguatera">
                                 Tech Stack
                             </p>
@@ -71,7 +71,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="col-span-1 xl:row-span-4">
+                <div className="col-span-1 lg:row-span-4">
                     <div className="bg-black py-4 px-6 rounded-3xl md:h-full">
                         <div className="flex h-fit w-full items-center justify-center rounded-3xl sm:h-81.5">
                             <Globe
@@ -93,7 +93,7 @@ export default function About() {
                             />
                         </div>
 
-                        <div>
+                        <div className="space-y-2">
                             <p className="text-2xl font-bold font-ciguatera">
                                 Je travaille en freelance.
                             </p>
@@ -110,7 +110,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="xl:col-span-2 xl:row-span-3">
+                <div className="lg:col-span-2 lg:row-span-3">
                     <div className="bg-black py-4 px-6 rounded-3xl md:h-full">
                         <img
                             src="/assets/grid3.png"
@@ -118,7 +118,7 @@ export default function About() {
                             className="h-fit w-full object-contain sm:h-66.5"
                         />
 
-                        <div>
+                        <div className="space-y-2">
                             <p className="text-2xl font-bold font-ciguatera">
                                 Ma passion pour le code
                             </p>
@@ -131,7 +131,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="xl:col-span-1 xl:row-span-2">
+                <div className="lg:col-span-1 lg:row-span-2">
                     <div className="bg-black py-4 px-6 rounded-3xl md:h-full">
                         <img
                             src="/assets/grid4.png"
