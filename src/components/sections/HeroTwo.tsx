@@ -26,12 +26,12 @@ export default function HeroTwo() {
     return (
         <section className="relative flex min-h-screen w-full flex-col">
             <div className="c-space mx-auto mt-20 flex w-full flex-col gap-3 sm:mt-36">
-                <p className="text-center text-primary font-ciguatera text-xl font-medium sm:text-3xl">
+                <p className="text-center text-primary font-ciguatera text-3xl font-medium md:text-3xl">
                     Hi, je suis Hermann Richy{" "}
                     <span className="waving-hand">👋</span>
                 </p>
 
-                <p className="text-center">
+                <p className="text-center text-base md:text-lg">
                     Ingénieur logiciel &amp; formateur
                 </p>
             </div>
@@ -82,7 +82,7 @@ export default function HeroTwo() {
                     asChild
                     className="text-sm py-6 px-8 rounded-full hover:cursor-pointer"
                 >
-                    <Link href="#contact">Let's work together</Link>
+                    <Link href="#about">A propos de moi</Link>
                 </Button>
             </div>
         </section>

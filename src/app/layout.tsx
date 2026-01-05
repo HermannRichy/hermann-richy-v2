@@ -26,7 +26,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="fr" suppressHydrationWarning>
+        <html lang="fr" className="scroll-smooth" suppressHydrationWarning>
             <body
                 className={`${outfit.variable} ${ciguatera.variable} antialiased font-outfit`}
             >
