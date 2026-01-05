@@ -41,7 +41,7 @@ interface DemoComputerProps {
 export const DemoComputer = ({
     texture,
     ...props
-}: ThreeElements & DemoComputerProps) => {
+}: ThreeElements["group"] & DemoComputerProps) => {
     const group = useRef<THREE.Group>(null);
     const { nodes, materials } = useGLTF(
         "/models/computer.glb"
