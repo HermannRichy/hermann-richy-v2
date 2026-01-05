@@ -115,111 +115,99 @@ export default function Contact() {
     };
 
     return (
-        <section className="c-space my-20" id="contact">
-            <div className="relative flex min-h-screen flex-col items-center justify-center">
-                <img
-                    src="/assets/terminal.png"
-                    alt="Terminal"
-                    className="absolute inset-0 h-full min-h-screen"
-                />
+        <section className="my-20" id="contact">
+            <div className="">
+                <h3 className="font-ciguatera text-2xl md:text-4xl">
+                    Let&apos;s talk
+                </h3>
 
-                <div className="contact-container">
-                    <h3 className="head-text">Let&apos;s talk</h3>
+                <p className="mt-3 text-lg text-white-600 md:w-2/5">
+                    Whether you&apos;re looking to build a new website, improve
+                    your existing platform, or bring a unique project to life,
+                    I&apos;m here to help.
+                </p>
 
-                    <p className="mt-3 text-lg text-white-600">
-                        Whether you&apos;re looking to build a new website,
-                        improve your existing platform, or bring a unique
-                        project to life, I&apos;m here to help.
-                    </p>
+                <form
+                    ref={formRef}
+                    onSubmit={(e) => void handleSubmit(e)}
+                    className="mt-12 flex flex-col space-y-7 md:w-2/5"
+                >
+                    <label className="flex flex-col space-y-3">
+                        <span className="field-label">Nom complet</span>
 
-                    <form
-                        ref={formRef}
-                        onSubmit={(e) => void handleSubmit(e)}
-                        className="mt-12 flex flex-col space-y-7"
-                    >
-                        <label className="space-y-3">
-                            <span className="field-label">Full name</span>
-
-                            <input
-                                type="text"
-                                name="name"
-                                value={form.name}
-                                onChange={handleChange}
-                                className="field-input disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-75"
-                                placeholder="John Doe"
-                                autoCapitalize="on"
-                                disabled={isLoading}
-                            />
-
-                            <span
-                                className="hidden text-red-400"
-                                id="name-error"
-                            >
-                                Invalid Name!
-                            </span>
-                        </label>
-
-                        <label className="space-y-3">
-                            <span className="field-label">Email</span>
-
-                            <input
-                                type="email"
-                                name="email"
-                                value={form.email}
-                                onChange={handleChange}
-                                className="field-input disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-75"
-                                placeholder="john.doe@email.com"
-                                autoCapitalize="off"
-                                disabled={isLoading}
-                            />
-
-                            <span
-                                className="hidden text-red-400"
-                                id="email-error"
-                            >
-                                Invalid Email!
-                            </span>
-                        </label>
-
-                        <label className="space-y-3">
-                            <span className="field-label">Your message</span>
-
-                            <textarea
-                                name="message"
-                                value={form.message}
-                                onChange={handleChange}
-                                rows={5}
-                                className="field-input disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-75"
-                                placeholder="Hi, I'm interested in..."
-                                autoCapitalize="on"
-                                disabled={isLoading}
-                            />
-
-                            <span
-                                className="hidden text-red-400"
-                                id="message-error"
-                            >
-                                Invalid Message!
-                            </span>
-                        </label>
-
-                        <button
-                            type="submit"
-                            className="field-btn disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-75"
+                        <input
+                            type="text"
+                            name="name"
+                            value={form.name}
+                            onChange={handleChange}
+                            className="border border-white p-2 rounded-lg focus:outline-primary"
+                            placeholder="John Doe"
+                            autoCapitalize="on"
                             disabled={isLoading}
-                        >
-                            {isLoading ? "Sending..." : "Send Message"}
+                        />
 
-                            {!isLoading && (
-                                <img
-                                    src="/assets/arrow-up.png"
-                                    alt="Arrow"
-                                    className="field-btn_arrow"
-                                />
-                            )}
-                        </button>
-                    </form>
-                </div>
+                        <span className="hidden text-red-400" id="name-error">
+                            Nom invalide!
+                        </span>
+                    </label>
+
+                    <label className="flex flex-col space-y-3">
+                        <span className="field-label">Email</span>
+
+                        <input
+                            type="email"
+                            name="email"
+                            value={form.email}
+                            onChange={handleChange}
+                            className="border border-white p-2 rounded-lg focus:outline-primary"
+                            placeholder="john.doe@email.com"
+                            autoCapitalize="off"
+                            disabled={isLoading}
+                        />
+
+                        <span className="hidden text-red-400" id="email-error">
+                            Email invalide!
+                        </span>
+                    </label>
+
+                    <label className="flex flex-col space-y-3">
+                        <span className="field-label">Votre message</span>
+
+                        <textarea
+                            name="message"
+                            value={form.message}
+                            onChange={handleChange}
+                            rows={5}
+                            className="border border-white p-2 rounded-lg focus:outline-primary"
+                            placeholder="Salut, je souhaite vous contacter pour..."
+                            autoCapitalize="on"
+                            disabled={isLoading}
+                        />
+
+                        <span
+                            className="hidden text-red-400"
+                            id="message-error"
+                        >
+                            Message invalide!
+                        </span>
+                    </label>
+
+                    <button
+                        type="submit"
+                        className="flex items-center justify-center gap-2 mt-4 bg-white text-black px-6 py-3 rounded-lg font-bold hover:bg-gray-200 transition duration-300"
+                        disabled={isLoading}
+                    >
+                        {isLoading ? "Envoi..." : "Envoyer Message"}
+
+                        {!isLoading && (
+                            <img
+                                src="/assets/arrow-up.png"
+                                alt="Arrow"
+                                className="w-4 h-4"
+                            />
+                        )}
+                    </button>
+                </form>
             </div>
         </section>
     );

@@ -16,10 +16,12 @@ export default function Experience() {
     return (
         <section className="c-space my-20" id="work">
             <div className="w-full text-white-600">
-                <h3 className="head-text">My work experience</h3>
+                <h3 className="font-ciguatera text-2xl md:text-4xl">
+                    Mon expérience professionnelle
+                </h3>
 
-                <div className="work-container">
-                    <div className="work-canvas">
+                <div className="flex flex-col lg:flex-row lg:gap-10 mt-12">
+                    <div className="md:w-1/3 h-125 lg:h-150 w-full mb-10 lg:mb-0 bg-black rounded-3xl">
                         <Canvas>
                             <ambientLight intensity={7} />
                             <spotLight
@@ -47,7 +49,7 @@ export default function Experience() {
                         </Canvas>
                     </div>
 
-                    <div className="work-content">
+                    <div className="bg-black rounded-3xl md:w-2/3 w-full">
                         <div className="px-2.5 py-5 sm:px-5 sm:py-10">
                             {workExperiences.map(
                                 ({
@@ -61,7 +63,7 @@ export default function Experience() {
                                 }) => (
                                     <div
                                         key={id}
-                                        className="work-content_container group"
+                                        className="flex group"
                                         onClick={() =>
                                             setAnimationName(animation)
                                         }
@@ -72,16 +74,16 @@ export default function Experience() {
                                             setAnimationName("idle")
                                         }
                                     >
-                                        <div className="flex h-full flex-col items-center justify-start py-2">
+                                        <div className="flex w-2/12 flex-col items-center justify-start py-2">
                                             <div className="work-content_logo">
                                                 <img
                                                     src={icon}
                                                     alt={name}
-                                                    className="size-full"
+                                                    className="w-10 h-10"
                                                 />
                                             </div>
 
-                                            <div className="work-content_bar" />
+                                            <div className="border-l h-full border-white/20" />
                                         </div>
 
                                         <div className="px-2.5 py-5 sm:p-5">

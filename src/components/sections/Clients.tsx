@@ -2,16 +2,18 @@ import { clientReviews } from "@/constants";
 
 export const Clients = () => {
     return (
-        <section className="c-space my-20">
-            <h3 className="head-text">Hear from my clients</h3>
+        <section className="p-4 md:p-10 rounded-4xl my-20">
+            <h3 className="font-ciguatera text-2xl md:text-4xl">
+                Ce que disent mes clients
+            </h3>
 
-            <div className="client-container">
+            <div className="grid gap-10 grid-cols-1 md:grid-cols-2 mt-12">
                 {clientReviews.map(({ id, name, review, img, position }) => (
-                    <div key={id} className="client-review">
-                        <div>
+                    <div key={id} className="bg-black p-6 rounded-3xl">
+                        <div className="space-y-6">
                             <p className="font-light text-white">{review}</p>
 
-                            <div className="client-content">
+                            <div className="flex items-end justify-between">
                                 <div className="flex gap-3">
                                     <img
                                         src={img}
