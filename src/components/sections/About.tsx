@@ -27,7 +27,7 @@ export default function About() {
 
     return (
         <section className="my-20" id="about">
-            <div className="md:grid p-4 md:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-6">
+            <div className="grid h-full p-4 grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-6">
                 <div className="col-span-1 lg:row-span-3">
                     <div className="bg-black p-4 md:py-4 md:px-6 rounded-3xl h-fit md:h-full">
                         <img

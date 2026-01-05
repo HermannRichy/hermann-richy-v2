@@ -37,7 +37,7 @@ export const Clients = () => {
                                             key={`${name}-star-${i}`}
                                             src="/assets/star.png"
                                             alt="Star"
-                                            className="size-4 md:size-5"
+                                            className="size-3 md:size-4"
                                         />
                                     ))}
                                 </div>
