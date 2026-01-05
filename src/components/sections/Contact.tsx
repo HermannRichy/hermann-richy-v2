@@ -117,14 +117,14 @@ export default function Contact() {
     return (
         <section className="my-20" id="contact">
             <div className="p-4 md:p-10">
-                <h3 className="font-ciguatera text-2xl md:text-4xl">
-                    Let&apos;s talk
+                <h3 className="font-ciguatera text-4xl text-primary">
+                    Contactez-moi !
                 </h3>
 
                 <p className="mt-3 text-lg text-white-600 md:w-2/5">
-                    Whether you&apos;re looking to build a new website, improve
-                    your existing platform, or bring a unique project to life,
-                    I&apos;m here to help.
+                    Vous avez un projet en tête ou souhaitez simplement dire
+                    bonjour? N&apos;hésitez pas à me contacter en remplissant le
+                    formulaire ci-dessous.
                 </p>
 
                 <form
@@ -140,7 +140,7 @@ export default function Contact() {
                             name="name"
                             value={form.name}
                             onChange={handleChange}
-                            className="border border-white p-2 rounded-lg focus:outline-primary"
+                            className="border border-white/20 p-4 rounded-lg"
                             placeholder="John Doe"
                             autoCapitalize="on"
                             disabled={isLoading}
@@ -159,7 +159,7 @@ export default function Contact() {
                             name="email"
                             value={form.email}
                             onChange={handleChange}
-                            className="border border-white p-2 rounded-lg focus:outline-primary"
+                            className="border border-white/20 p-4 rounded-lg"
                             placeholder="john.doe@email.com"
                             autoCapitalize="off"
                             disabled={isLoading}
@@ -178,7 +178,7 @@ export default function Contact() {
                             value={form.message}
                             onChange={handleChange}
                             rows={5}
-                            className="border border-white p-2 rounded-lg focus:outline-primary"
+                            className="border border-white/20 p-4 rounded-lg"
                             placeholder="Salut, je souhaite vous contacter pour..."
                             autoCapitalize="on"
                             disabled={isLoading}
@@ -194,7 +194,7 @@ export default function Contact() {
 
                     <button
                         type="submit"
-                        className="flex items-center justify-center gap-2 mt-4 bg-white text-black px-6 py-3 rounded-lg font-bold hover:bg-gray-200 transition duration-300"
+                        className="flex items-center justify-center gap-2 mt-4 bg-primary/90 text-black px-6 py-3 rounded-lg font-bold hover:bg-primary transition duration-300"
                         disabled={isLoading}
                     >
                         {isLoading ? "Envoi..." : "Envoyer Message"}

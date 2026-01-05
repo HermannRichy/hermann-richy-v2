@@ -37,7 +37,7 @@ export default function About() {
                         />
 
                         <div className="space-y-2">
-                            <p className="text-2xl font-bold font-ciguatera">
+                            <p className="text-2xl font-bold font-ciguatera text-primary">
                                 Hello, moi c'est Richy!
                             </p>
                             <p>
@@ -59,7 +59,7 @@ export default function About() {
                         />
 
                         <div className="space-y-2">
-                            <p className="text-2xl font-bold font-ciguatera">
+                            <p className="text-2xl font-bold font-ciguatera text-primary">
                                 Tech Stack
                             </p>
                             <p>
@@ -94,7 +94,7 @@ export default function About() {
                         </div>
 
                         <div className="space-y-2">
-                            <p className="text-2xl font-bold font-ciguatera">
+                            <p className="text-2xl font-bold font-ciguatera text-primary">
                                 Je travaille en freelance.
                             </p>
 
@@ -119,7 +119,7 @@ export default function About() {
                         />
 
                         <div className="space-y-2">
-                            <p className="text-2xl font-bold font-ciguatera">
+                            <p className="text-2xl font-bold font-ciguatera text-primary">
                                 Ma passion pour le code
                             </p>
                             <p>
@@ -140,7 +140,7 @@ export default function About() {
                         />
 
                         <div className="space-y-2">
-                            <p className="grid-subtext text-center">
+                            <p className="grid-subtext text-center text-primary">
                                 Contactez-moi par e-mail
                             </p>
 

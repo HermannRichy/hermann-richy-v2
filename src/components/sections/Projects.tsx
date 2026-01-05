@@ -35,8 +35,8 @@ export default function Projects() {
     }, [selectedProjectIndex]);
 
     return (
-        <section className="bg-black p-4 md:p-10 rounded-4xl my-20">
-            <p className="font-ciguatera text-3xl md:text-4xl m-5">
+        <section className="bg-black p-4 md:p-10 rounded-b-4xl md:rounded-4xl my-20">
+            <p className="font-ciguatera text-4xl text-primary m-5">
                 Mon travail
             </p>
 

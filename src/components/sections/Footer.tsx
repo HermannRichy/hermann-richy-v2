@@ -4,8 +4,9 @@ export default function Footer() {
     return (
         <footer className="p-4 flex flex-col md:flex-row items-center justify-center md:justify-between gap-5 border-t border-black-300 pb-3 pt-7">
             <div className="text-white-500">
-                &copy; {new Date().getFullYear()} <strong>Hermann Richy</strong>
-                . Tous droits reservés.
+                &copy; {new Date().getFullYear()}{" "}
+                <strong className="text-primary">Hermann Richy</strong>. Tous
+                droits reservés.
             </div>
 
             <div className="flex gap-3">

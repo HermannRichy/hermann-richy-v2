@@ -3,7 +3,7 @@ import { clientReviews } from "@/constants";
 export const Clients = () => {
     return (
         <section className="p-4 md:p-10 rounded-4xl my-20">
-            <h3 className="font-ciguatera text-2xl md:text-4xl">
+            <h3 className="font-ciguatera text-4xl text-primary">
                 Ce que disent mes clients
             </h3>
 

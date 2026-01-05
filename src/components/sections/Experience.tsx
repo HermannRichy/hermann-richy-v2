@@ -16,7 +16,7 @@ export default function Experience() {
     return (
         <section className="p-4 my-20" id="work">
             <div className="w-full text-white-600">
-                <h3 className="font-ciguatera text-3xl md:text-4xl">
+                <h3 className="font-ciguatera text-4xl text-primary">
                     Mon expérience professionnelle
                 </h3>
 
